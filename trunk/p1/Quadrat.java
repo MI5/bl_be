@@ -2,6 +2,8 @@ package p1;
 
 public class Quadrat
 {
+    
+    
   static int quadrat(int n)
   {
     return n * n;
@@ -9,6 +11,6 @@ public class Quadrat
 
   public static void main(String[] args)
   {
-    System.in.println(quadrat(4));
+    System.out.println("Ergebnis: "+quadrat(4));
   }
 }
