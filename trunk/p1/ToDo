@@ -1,3 +1,26 @@
+Grafisches Design:
+
+|------------------------|---------------------------------------------|
+|  |<|  Juli 2006  |>|   |      Button1       Button2      Button3     |
+|Mo,Di,Mi,Do,Fr,Sa,So    |                                             |
+| 1, 2, 3, 4, 5, 6, 7    |      Button4       Button5      Button6     |
+| 8, 9,10,11,12,13,14    |                                             |
+|15,16,17,18,19,20,21    |                                             |
+|22,23,24,25,26,27,28    |                                             |
+|29,30                   |                                             |
+|------------------------|---------------------------------------------|
+|                                                                      |
+|    Geburtstage                                                       |
+|    ...                                                               |
+|    Termine                                                           |
+|    ...             |x| (bearbeiten)                                  |
+|    ToDo                                                              |
+|    ...             |x| (erledigt)                                    |
+|                                                                      |
+|------------------------|---------------------------------------------|
+
+
+
 Umsetzungen Terminkalender:
 
 1. Design:
@@ -10,12 +33,46 @@ Umsetzungen Terminkalender:
    
 2. Funktionalität:
    - Mit Buttons (später eventuell ein aufklappbares Menü)
-   - Termine eintragen
-   - Geburtstage eintragen
+   - Termin eintragen
+   - Geburtstag eintragen
+   - "ToDo" eintragen
+   - Login
+   - Logout
 
-2.1 Termin eintragen:
-   - Feld Termin eintragen
+2.1 Termin eintragen-Seite
+   - Feld Terminbeschreibung
    - Feld für Datum
    - Feld für Uhrzeit
-   - Feld Dauer des Termins
+   - Feld Dauer des Termins (optional)
    - Auswahl Termin privat oder öffentlich
+         (Definition privat: Der Termin taucht nur im eigenen Kalender auf)
+         (Definition öffentlich: Der Termin taucht in jedem Kalender eines jeden
+         Benutzers auf. z.B. eine "Bundestagswahl", die für jeden interessant ist.
+         Später: Eine Einschränkung auf bestimmte Nutzer für einen Termin ist möglich)
+   - Auswahl Wiederholungsrhytmus (wöchentlich, monatlich....)
+   - Auswahl Anzahl der Wiederholungen (1..99)
+   
+2.2 Geburtstag eintragen-Seite
+	 - Eintragen des Geburtstagnamens
+	 - Eintragen der eMail-Adresse des Geburtstagskindes.
+	 => Daraus resultiert später die direkte Möglichkeit eine eMail zu schicken
+
+
+2.3 "ToDo" eintragen-Seite
+   - Feld "ToDo"-Beschreibung
+   - Ankreuzen: Muss-ToDo (nicht aufschiebbar) oder Kann-ToDo (aufschiebbar)
+   
+   
+   
+3 Konkrete Konzepte
+   - Login-Logout per php-Session-Management
+   - Termine speichern per MySql-Datenbank
+   - Kalender per php
+   - Kalenderansicht per Javascript
+   - Sämtliche Formatierungen per CSS
+   
+   
+   
+4 Was noch fehlt
+   - Die Datenbank-Tabellen überlegen.
+   - Ein CSS-Design ausarbeiten.
