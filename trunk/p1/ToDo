@@ -1,1 +1,21 @@
-Umsetzungen
+Umsetzungen Terminkalender:
+
+1. Design:
+   - Funktionalität über Buttons (später feste Menüstruktur)
+   - Kalender in Monatsansicht
+   - Kalender hat keine direkte Funktion (Nur Terminausgabe und Anzeige)
+   - Möglichkeit über Pfeile auf die benachbarten Monate zuzugreifen
+   - Trennung zwischen festen Elementen (Kalender, Buttons) und
+     dem wechselnden Inhalt (Anzeigen von Tagesterminen)
+   
+2. Funktionalität:
+   - Mit Buttons (später eventuell ein aufklappbares Menü)
+   - Termine eintragen
+   - Geburtstage eintragen
+
+2.1 Termin eintragen:
+   - Feld Termin eintragen
+   - Feld für Datum
+   - Feld für Uhrzeit
+   - Feld Dauer des Termins
+   - Auswahl Termin privat oder öffentlich
