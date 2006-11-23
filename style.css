@@ -1,0 +1,38 @@
+html {
+background: url(bilder/hintergrund.gif);
+color: #333;
+cursor: default;
+}
+
+body {
+margin: 1px;
+padding: 1px;
+}
+
+table {
+background: #FFEDE1;
+border: 3px double #CC8F66;
+empty-cells: hide;
+font: 75%/1.3 georgia, serif;
+table-layout: fixed;
+width: 250px;
+}
+
+th, td {
+padding: .2em .1em;
+text-align: center;
+}
+
+th {
+background: #6B462E;
+color: #FFF;
+}
+
+td {
+background: #E6C7B3;
+border: 1px solid #CC8F66;
+}
+
+td.aux {
+background: transparent;
+}
