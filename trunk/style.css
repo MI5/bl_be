@@ -60,3 +60,7 @@ a {
 a:hover {
   color: rgb(255,0,0);
 }
+
+a:visited {
+    color: rgb(0,0,255);
+}
