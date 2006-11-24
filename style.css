@@ -43,13 +43,13 @@ background: transparent;
 	font-size: small;
 	background: #FFEDE1;
 	border: 3px solid #CC8F66;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .buttonpos {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: left;
+    margin-top: 5px;
 }
 
 a {
