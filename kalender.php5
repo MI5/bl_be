@@ -19,7 +19,7 @@ else
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xml:lang="de">
   <head>
-    <title>Kalendera</title>
+    <title>Kalender</title>
     <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
@@ -42,11 +42,12 @@ else
         <tr>
           <th>Mo</th><th>Di</th><th>Mi</th><th>Do</th><th>Fr</th><th>Sa</th><th>So</th>
         </tr>
-        
+        <?php
         /**
          * Geht von 1-31 die Tage durch. Setzt ein Offset.
          * Alle 7 ein Umbruch. .... 
          */
+         ?>
         <tr>
           <td class="aux" />
           <td class="aux" />
