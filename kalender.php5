@@ -1,3 +1,21 @@
+<?php
+
+if (isset($_GET['m']))
+{
+	$m = $_GET['m'];
+
+	$kalZeit = mktime(date("G"),date("i"),date("s"),date("n")+$m);
+
+	$m++;
+}
+else
+{
+	$m = 1;
+	$kalZeit = time();
+}
+?>
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xml:lang="de">
   <head>
@@ -6,24 +24,37 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
+
     <table>
+
+        <caption>
+          <a href="<?=$PHP_SELF?>?m=<?=$m-2?>">
+            <img src="bilder/rueck.gif" alt="" width="10" height="10" border="0" />
+          </a>
+          <b>
+            <?php echo date("M Y", $kalZeit);  ?>
+          </b>
+          <a href="<?=$PHP_SELF?>?m=<?=$m?>">
+            <img src="bilder/vor.gif" alt="" width="10" height="10" border="0" />
+          </a>        
+        </caption>
+
         <tr>
-          <th>Mo</th>
-          <th>Di</th>
-          <th>Mi</th>
-          <th>Do</th>
-          <th>Fr</th>
-          <th>Sa</th>
-          <th>So</th>
+          <th>Mo</th><th>Di</th><th>Mi</th><th>Do</th><th>Fr</th><th>Sa</th><th>So</th>
         </tr>
-		<tr>
-			<td class="aux" />
-			<td class="aux" />
-			<td>1</td>
-			<td>2</td>
-			<td>3</td>
-			<td>4</td>
-			<td>5</td>
+        
+        /**
+         * Geht von 1-31 die Tage durch. Setzt ein Offset.
+         * Alle 7 ein Umbruch. .... 
+         */
+        <tr>
+          <td class="aux" />
+          <td class="aux" />
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
         </tr>
         <tr>
           <td>6</td>
@@ -84,7 +115,7 @@
 	 		<span class="button">
 		  		<a href="test.php">Button 3</a> 
 	   	</span>	
-	   	<p />
+	   	<br /><br />
 	 		<span class="button">
 		  		<a href="test.php">Button 4</a>
 	  	</span>	
