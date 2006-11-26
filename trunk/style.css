@@ -5,8 +5,8 @@ cursor: default;
 }
 
 body {
-margin: 1px;
-padding: 1px;
+margin: 4px;
+padding: 4px;
 }
 
 table {
@@ -16,16 +16,18 @@ empty-cells: hide;
 font: 75%/1.3 georgia, serif;
 table-layout: fixed;
 width: 250px;
+height: 165px;
 }
 
 th, td {
 padding: .2em .1em;
 text-align: center;
+height: 22px;
 }
 
 th {
 background: #6B462E;
-color: #FFF;
+color: #FFFFFF;
 }
 
 td {
@@ -36,6 +38,7 @@ border: 1px solid #CC8F66;
 td.aux {
 background: transparent;
 }
+
 
 /* CSS von Becks */
 
