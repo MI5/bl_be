@@ -1,10 +1,10 @@
 Tabelle Termin
-|-----------------------------------------------------------|
-|Terminart|TerminBeginn|TerminEnde|Terminbeschreibung|UserId|
-|1        |DATE        |DATE      |DATE              |1     |
-|2        |DATE        |DATE      |DATE              |2     |
-|3        |DATE        |DATE      |DATE              |3     |
-|-----------------------------------------------------------|
+|--------------------------------------------------------------------|
+|Terminart|TerminBeginn|TerminEnde|Terminbeschreibung|UserId|TerminID|
+|1        |DATE        |DATE      |DATE              |1     |1       |
+|2        |DATE        |DATE      |DATE              |2     |2       |
+|3        |DATE        |DATE      |DATE              |3     |3       |
+|--------------------------------------------------------------------|
 
 
 Tabelle User
