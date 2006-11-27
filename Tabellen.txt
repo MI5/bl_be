@@ -1,9 +1,9 @@
-Tabelle Termin
+Tabelle Termine
 |--------------------------------------------------------------------|
 |Terminart|TerminBeginn|TerminEnde|Terminbeschreibung|UserId|TerminID|
-|1        |DATE        |DATE      |DATE              |1     |1       |
-|2        |DATE        |DATE      |DATE              |2     |2       |
-|3        |DATE        |DATE      |DATE              |3     |3       |
+|1        |DATE        |DATE      |TEXT              |1     |1       |
+|2        |DATE        |DATE      |TEXT              |2     |2       |
+|3        |DATE        |DATE      |TEXT              |3     |3       |
 |--------------------------------------------------------------------|
 
 
@@ -16,11 +16,11 @@ Tabelle User
 |----------------------------------------------------------|
 
 
-
+Tabelle Terminarten
 ------------------------
 |Terminart|Bedeutung   |
 |1        |ToDo        |
 |2        |privat      |
-|3        |Geschäftlich|
+|3        |public      |
 |4        |Geburtstag  |
 ------------------------
