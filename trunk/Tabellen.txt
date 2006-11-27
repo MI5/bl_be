@@ -21,5 +21,6 @@ Tabelle User
 |Terminart|Bedeutung   |
 |1        |ToDo        |
 |2        |privat      |
-|3        |Gesch√§ftlich|
+|3        |Gesch‰ftlich|
+|4        |Geburtstag  |
 ------------------------
