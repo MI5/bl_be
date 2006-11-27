@@ -107,23 +107,23 @@ else
  
   
   	<div class="buttonpos">
-			<span class="button">
+		<span class="button">
 		  		<a href="test1.php">Button 1</a>
 	  	</span>	
 			<span class="button">
 		  		<a href="test2.php">Button 2</a>
 	  	</span>	
 	 		<span class="button">
-		  		<a href="test.php">Button 3</a> 
+		<a href="test.php">Button 3</a> 
 	   	</span>	
 	   	<br /><br />
-	 		<span class="button">
+	 	<span class="button">
 		  		<a href="test.php">Button 4</a>
 	  	</span>	
-	  		 		<span class="button">
+	  	<span class="button">
 		  		<a href="test.php">Button 5</a>
 	  	</span>	
-	  		 		<span class="button">
+	  	<span class="button">
 		  		<a href="test.php">Button 6</a>
 	  	</span>	
 	  </div>
