@@ -1,0 +1,25 @@
+Tabelle Termin
+|-----------------------------------------------------------|
+|Terminart|TerminBeginn|TerminEnde|Terminbeschreibung|UserId|
+|1        |DATE        |DATE      |DATE              |1     |
+|2        |DATE        |DATE      |DATE              |2     |
+|3        |DATE        |DATE      |DATE              |3     |
+|-----------------------------------------------------------|
+
+
+Tabelle User
+|----------------------------------------------------------|
+|UserId   |Username    |Passwort   |E-Mail     |Session    |
+|1        |VARCHAR(30) |VARCHAR(30)|VARCHAR(30)|VARCHAR(30)|
+|2        |VARCHAR(30) |VARCHAR(30)|VARCHAR(30)|VARCHAR(30)|
+|3        |VARCHAR(30) |VARCHAR(30)|VARCHAR(30)|VARCHAR(30)|
+|----------------------------------------------------------|
+
+
+
+------------------------
+|Terminart|Bedeutung   |
+|1        |ToDo        |
+|2        |privat      |
+|3        |Geschäftlich|
+------------------------
