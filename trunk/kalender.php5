@@ -4,7 +4,7 @@ if (isset($_GET['m']))
 {
 	$m = $_GET['m'];
 
-	$kalZeit = mktime(date("G"),date("i"),date("s"),date("n")+$m);
+	$kalZeit = mktime(date("G"),date("i"),date("s"),date("n")+$m,1);
 
 	$m++;
 }
