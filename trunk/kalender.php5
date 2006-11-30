@@ -76,7 +76,8 @@ else
         <?php
         // Wir müssen in der Tabelle so viele leere Zellen ausgehen, wie wir entfernt
         // von Montag sind.
-        // Haben wir Montag, dann natürlich keine. Haben wir Mittwoch, dann sind es 2.
+        // Ist der 1. ein Montag, dann natürlich keine. Ist der 1. ein Mittwoch, dann
+        // sind es 2.
         // Das switch ist bewusst ohne break! So dass man durch den Code "durchfällt"
         // und so automatisch die korrekte Anzahl an leeren Zellen ermittelt wird.
         switch (date("D", $kalZeit))
