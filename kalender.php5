@@ -114,7 +114,10 @@ else
         for ($i=1;$i<=date("t", $kalZeit);$i++)
         {
             // Ich gebe den Tag als Zelle aus
-        	echo "<td>$i</td>\n";
+            if ($i == date("j", $kalZeit))
+        	    echo "<td class=\"heute\">$i</td>\n";
+            else
+        	    echo "<td>$i</td>\n";
 
         	// An jedem Sonntag ( % 7) füge ich einen Tabellen-umbruch ein.
         	// Aber nicht dann wenn es sich um den letzten Tag des Monats handelt.
