@@ -156,11 +156,17 @@ else
     <div class="buttonposkal">
 		<a href="kalender.php5" class="button">Neuer Termin</a>
     	<a href="kalender.php5" class="button">Neuer Geburtstag</a>
+		<a href="kalender.php5" class="button">Neues ToDo</a>
 		<a href="kalender.php5" class="button">Neues ToDo</a> 
+		<a href="kalender.php5" class="button">Neues ToDo</a> 
+		<a href="kalender.php5" class="button">Neues ToDo</a>  
 	</div>
 	<div class="buttonposnav">
 	  	<a href="kalender.php5" class="button">Login</a>
 	  	<a href="kalender.php5" class="button">Einstellungen</a>
+	  	<a href="kalender.php5" class="button">Neues ToDo</a> 
+	  	<a href="kalender.php5" class="button">Neues ToDo</a> 
+	  	<a href="kalender.php5" class="button">Neues ToDo</a> 
     </div>
 	 
 	<div class="terminpos">
