@@ -123,14 +123,10 @@ else
         {
             // Ich gebe den Tag als Zelle aus
             if ($i == date("j", $kalZeit)) {
-            	$m--;
-        	    echo "<td class=\"heute\"><a href=\"$PHP_SELF?m=$m&day=$i\">$i</a></td>\n";
-        	    $m++;
+        	    echo "<td class=\"heute\"><a href=\"$PHP_SELF?m=".($m-1)."&day=$i\">$i</a></td>\n";
             }
             else {
-            	$m--;
-        	    echo "<td><a href=\"$PHP_SELF?m=$m&day=$i\">$i</a></td>\n";
-        	    $m++;
+        	    echo "<td><a href=\"$PHP_SELF?m=".($m-1)."&day=$i\">$i</a></td>\n";
             }
 
         	// An jedem Sonntag ( % 7) füge ich einen Tabellen-umbruch ein.
