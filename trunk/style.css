@@ -47,6 +47,7 @@ background: transparent;
 /* CSS von Becks */
 
 .button {
+  display: inline;
 	font-size: small;
 	background: #FFEDE1;
 	border: 2px solid #CC8F66;
