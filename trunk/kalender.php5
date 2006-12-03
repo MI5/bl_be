@@ -153,14 +153,14 @@ else
 
 
 
-    <div class="buttonpos">
-		<a href="test1.php" class="button">Login</a>
-    	<a href="test2.php" class="button">Logout</a>
-		<a href="test2.php" class="button">Einstellungen</a> 
-	   	<br /><br />
-	  	<a href="test.php" class="button">Neuer Termin</a>
-	  	<a href="test.php" class="button">Neuer Geburtstag</a>
-	  	<a href="test.php" class="button">Neues ToDo</a>
+    <div class="buttonposkal">
+		<a href="test1.php" class="button">Neuer Termin</a>
+    	<a href="test2.php" class="button">Neuer Geburtstag</a>
+		<a href="test2.php" class="button">Neues ToDo</a> 
+	</div>
+	<div class="buttonposnav">
+	  	<a href="test.php" class="button">Login</a>
+	  	<a href="test.php" class="button">Einstellungen</a>
     </div>
 	 
 	<div class="terminpos">

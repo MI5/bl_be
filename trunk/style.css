@@ -47,17 +47,26 @@ background: transparent;
 /* CSS von Becks */
 
 .button {
-  display: inline;
+  margin: 5px;
+  display: block;
+  width: 90px;
 	font-size: small;
 	background: #FFEDE1;
+	vertical-align: bottom;
 	border: 2px solid #CC8F66;
   padding-left: 1em;
   padding-right: 1em;
+
 }
 
-.buttonpos {
+.buttonposkal {
     text-align: left;
-    margin: -90px 300px;
+    margin: -100px 300px;
+}
+
+.buttonposnav {
+    text-align: left;
+    margin: 30px 430px;
 }
 
 .terminpos {
