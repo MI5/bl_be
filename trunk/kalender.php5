@@ -33,7 +33,7 @@ else
 {
     // Wenn $m nicht gesetzt ist, dann ermitteln wir den aktuellen echten Monat mit
     // time().
-	$kalZeit = time();
+	$kalZeit = mktime(date("G"),date("i"),date("s"),date("n"),1);
 
     // $m wird gesetzt damit in den Vor- und Zurück-Links in der Kalender-Ansicht
     // korrekt zum nächsten Monat gewechselt werden kann.
