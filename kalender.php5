@@ -122,7 +122,8 @@ else
         for ($i=1;$i<=date("t", $kalZeit);$i++)
         {
             // Ich gebe den Tag als Zelle aus
-            if ($i == date("j", $kalZeit)) {
+//            if ($i == date("j", $kalZeit)) {
+            if ($i == $day) {
         	    echo "<td class=\"heute\"><a href=\"$PHP_SELF?m=".($m-1)."&day=$i\">$i</a></td>\n";
             }
             else {
