@@ -8,9 +8,9 @@ Gewählte Programmier-Umgebungen:
 Grafisches Design: (Button noch ersetzen)
 
 |------------------------|---------------------------------------------|
-|  |<|  Juli 2006  |>|   |      Button1       Button2      Button3     |
+|  |<|  Juli 2006  |>|   | Login         Logout           Einstellungen|
 |Mo,Di,Mi,Do,Fr,Sa,So    |                                             |
-| 1, 2, 3, 4, 5, 6, 7    |      Button4       Button5      Button6     |
+| 1, 2, 3, 4, 5, 6, 7    | Neuer Termin  Neuer Geburtstag  Neues Todo  |
 | 8, 9,10,11,12,13,14    |                                             |
 |15,16,17,18,19,20,21    |                                             |
 |22,23,24,25,26,27,28    |                                             |
