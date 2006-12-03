@@ -49,23 +49,35 @@ background: transparent;
 .button {
 	font-size: small;
 	background: #FFEDE1;
-	border: 3px solid #CC8F66;
+	border: 2px solid #CC8F66;
   padding-left: 1em;
   padding-right: 1em;
 }
 
 .buttonpos {
     text-align: left;
-    margin-top: -105px;
-    margin-left: 290px;
+    margin: -90px 300px;
+}
+
+.terminpos {
+    text-align: left;
+    margin-top: 165px;
+    margin-left: 10px; 
+}
+
+.termin {
+	font-size: 1.2em;
+	font-style: italic;
+	text-decoration: underline;
 }
 
 a {
+  color: blue;
 	text-decoration: none;
 }
 
 a:hover {
-  color: rgb(255,0,0);
+  color: rgb(255,0,0) !important;
 }
 
 a:visited {

@@ -39,6 +39,14 @@ else
     // korrekt zum nächsten Monat gewechselt werden kann.
     $m = 1;
 }
+if (isset($_GET['day']))
+{
+	$day = $_GET['day'];
+}
+else
+{
+    $day = 0;
+}
 ?>
 
 
@@ -114,10 +122,16 @@ else
         for ($i=1;$i<=date("t", $kalZeit);$i++)
         {
             // Ich gebe den Tag als Zelle aus
-            if ($i == date("j", $kalZeit))
-        	    echo "<td class=\"heute\">$i</td>\n";
-            else
-        	    echo "<td>$i</td>\n";
+            if ($i == date("j", $kalZeit)) {
+            	$m--;
+        	    echo "<td class=\"heute\"><a href=\"$PHP_SELF?m=$m&day=$i\">$i</a></td>\n";
+        	    $m++;
+            }
+            else {
+            	$m--;
+        	    echo "<td><a href=\"$PHP_SELF?m=$m&day=$i\">$i</a></td>\n";
+        	    $m++;
+            }
 
         	// An jedem Sonntag ( % 7) füge ich einen Tabellen-umbruch ein.
         	// Aber nicht dann wenn es sich um den letzten Tag des Monats handelt.
@@ -142,30 +156,36 @@ else
 
 
 
-  	<div class="buttonpos">
-		<span class="button">
-		  		<a href="test1.php">Button 1</a>
+    <div class="buttonpos">
+	    <span class="button">
+		  	<a href="test1.php">Login</a>
 	  	</span>	
-			<span class="button">
-		  		<a href="test2.php">Button 2</a>
+		<span class="button">
+		  	<a href="test2.php">Logout</a>
 	  	</span>	
 	 		<span class="button">
-		<a href="test.php">Button 3</a> 
+		<a href="test.php">Einstellungen</a> 
 	   	</span>	
 	   	<br /><br />
 	 	<span class="button">
-		  		<a href="test.php">Button 4</a>
+		  	<a href="test.php">Neuer Termin</a>
 	  	</span>	
 	  	<span class="button">
-		  		<a href="test.php">Button 5</a>
+		  	<a href="test.php">Neuer Geburtstag</a>
 	  	</span>	
 	  	<span class="button">
-		  		<a href="test.php">Button 6</a>
+		  	<a href="test.php">Neues ToDo</a>
 	  	</span>	
-	  </div>
-  
-
-
-
+    </div>
+	 
+	<div class="terminpos">
+	    <span class="termin">
+			<?php
+			    if ($day != 0) {
+			        echo "Termine für den ".$day.". ".date("M Y", $kalZeit);
+			    }
+			?> 
+		</span>
+    </div>
 	</body>	
 </html>
