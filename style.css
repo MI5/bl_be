@@ -85,9 +85,9 @@ background: transparent;
 }
 
 .terminpos {
-    text-align: left;
-    margin-top: 165px;
-    margin-left: 10px; 
+    position: absolute;
+    top: 200px;
+    left: 10px;
 }
 
 .termin {
