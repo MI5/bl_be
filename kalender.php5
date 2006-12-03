@@ -157,25 +157,13 @@ else
 
 
     <div class="buttonpos">
-	    <span class="button">
-		  	<a href="test1.php">Login</a>
-	  	</span>	
-		<span class="button">
-		  	<a href="test2.php">Logout</a>
-	  	</span>	
-	 		<span class="button">
-		<a href="test.php">Einstellungen</a> 
-	   	</span>	
+		<a href="test1.php" class="button">Login</a>
+    	<a href="test2.php" class="button">Logout</a>
+		<a href="test2.php" class="button">Einstellungen</a> 
 	   	<br /><br />
-	 	<span class="button">
-		  	<a href="test.php">Neuer Termin</a>
-	  	</span>	
-	  	<span class="button">
-		  	<a href="test.php">Neuer Geburtstag</a>
-	  	</span>	
-	  	<span class="button">
-		  	<a href="test.php">Neues ToDo</a>
-	  	</span>	
+	  	<a href="test.php" class="button">Neuer Termin</a>
+	  	<a href="test.php" class="button">Neuer Geburtstag</a>
+	  	<a href="test.php" class="button">Neues ToDo</a>
     </div>
 	 
 	<div class="terminpos">
