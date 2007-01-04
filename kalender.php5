@@ -45,7 +45,7 @@ if (isset($_GET['day']))
 }
 else
 {
-    $day = 0;
+    $day = date("j");
 }
 ?>
 
@@ -122,11 +122,12 @@ else
         for ($i=1;$i<=date("t", $kalZeit);$i++)
         {
             // Ich gebe den Tag als Zelle aus
-//            if ($i == date("j", $kalZeit)) {
-            if ($i == $day) {
+            if ($i == $day)
+            {
         	    echo "<td class=\"heute\"><a href=\"$PHP_SELF?m=".($m-1)."&day=$i\">$i</a></td>\n";
             }
-            else {
+            else
+            {
         	    echo "<td><a href=\"$PHP_SELF?m=".($m-1)."&day=$i\">$i</a></td>\n";
             }
 
@@ -154,7 +155,7 @@ else
 
 
     <div class="buttonposkal">
-		<a href="kalender.php5" class="button">Neuer Termin</a>
+		<a href="<?=$php_SELF?>?action=neuertermin" class="button">Neuer Termin</a>
     	<a href="kalender.php5" class="button">Neuer Geburtstag</a>
 		<a href="kalender.php5" class="button">Neues ToDo</a>
 	</div>
@@ -162,15 +163,22 @@ else
 	  	<a href="kalender.php5" class="button">Login</a>
 	  	<a href="kalender.php5" class="button">Einstellungen</a>
     </div>
+	
+	<?php if (isset($action) && $action == "neuertermin"): ?>
+
+    <br>Neuer Termin
+    	
+	<?php endif; ?>
+
+
+	<?php if (!isset($action)): ?>
 	 
 	<div class="terminpos">
-	    <span class="termin">
-			<?php
-			    if ($day != 0) {
-			        echo "Termine für den ".$day.". ".date("M Y", $kalZeit);
-			    }
-			?> 
-		</span>
+	  <span class="termin">
+        <?php echo "Termine für den ".$day.". ".date("M Y", $kalZeit); ?> 
+      </span>
     </div>
-	</body>	
+    
+    <?php endif; ?>
+  </body>	
 </html>
